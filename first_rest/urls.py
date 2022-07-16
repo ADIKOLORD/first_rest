@@ -18,6 +18,7 @@ from django.urls import path
 from blog.views import PostListView, PostCreateListView, PostDetailView, PostListView2
 
 urlpatterns = [
+    
     path('admin/', admin.site.urls),
     path('', PostListView.as_view()),
     path('blogs', PostListView2.as_view()),
